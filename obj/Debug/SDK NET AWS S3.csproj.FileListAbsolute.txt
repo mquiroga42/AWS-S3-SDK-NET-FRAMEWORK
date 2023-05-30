@@ -1,0 +1,84 @@
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\SDK NET AWS S3.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\SDK NET AWS S3.pdb
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\AWSSDK.Core.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\AWSSDK.S3.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Formatting.Compact.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.AmazonS3.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\AWSSDK.Core.pdb
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\AWSSDK.Core.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\AWSSDK.S3.pdb
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\AWSSDK.S3.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Formatting.Compact.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.AmazonS3.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.Console.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\bin\Debug\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.AssemblyReference.cache
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.CoreCompileInputs.cache
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.CopyComplete
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.dll
+C:\Users\Invitado 1\Documentación\proyecto\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.pdb
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\SDK NET AWS S3.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\SDK NET AWS S3.pdb
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\AWSSDK.Core.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\AWSSDK.S3.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Formatting.Compact.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.AmazonS3.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\AWSSDK.Core.pdb
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\AWSSDK.Core.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\AWSSDK.S3.pdb
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\AWSSDK.S3.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Formatting.Compact.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.AmazonS3.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.Console.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\bin\Debug\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.AssemblyReference.cache
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.CoreCompileInputs.cache
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.CopyComplete
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.dll
+C:\Users\Invitado 1\Documentación\proyecto\amazon-s3-test-client\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.pdb
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\SDK NET AWS S3.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\SDK NET AWS S3.pdb
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\AWSSDK.Core.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\AWSSDK.S3.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Formatting.Compact.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.AmazonS3.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\AWSSDK.Core.pdb
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\AWSSDK.Core.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\AWSSDK.S3.pdb
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\AWSSDK.S3.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Formatting.Compact.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.AmazonS3.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.Console.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\bin\Debug\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.AssemblyReference.cache
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.CoreCompileInputs.cache
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.csproj.CopyComplete
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.dll
+C:\Users\Invitado 1\Documentación\Mi Version SDK\SDK NET AWS S3\obj\Debug\SDK NET AWS S3.pdb

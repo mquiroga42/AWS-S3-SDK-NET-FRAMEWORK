@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Serilog.Sinks.AmazonS3</name>
+    </assembly>
+    <members>
+        <member name="T:Serilog.LoggerConfigurationAmazonS3Extensions">
+            <summary>
+            This class contains the Amazon S3 logger configuration.
+            </summary>
+        </member>
+        <member name="F:Serilog.LoggerConfigurationAmazonS3Extensions.DefaultOutputTemplate">
+            <summary>
+            The default output template.
+            </summary>
+        </member>
+        <member name="F:Serilog.LoggerConfigurationAmazonS3Extensions.DefaultBatchSizeLimit">
+            <summary>
+            The default batch size limit.
+            </summary>
+        </member>
+        <member name="F:Serilog.LoggerConfigurationAmazonS3Extensions.DefaultEagerlyEmitFirstEvent">
+            <summary>
+            The default value to eagerly emit the first event.
+            </summary>
+        </member>
+        <member name="F:Serilog.LoggerConfigurationAmazonS3Extensions.DefaultQueueSizeLimit">
+            <summary>
+            The default queue size limit.
+            </summary>
+        </member>
+        <member name="F:Serilog.LoggerConfigurationAmazonS3Extensions.DefaultEncoding">
+            <summary>
+            The default encoding.
+            </summary>
+        </member>
+        <member name="F:Serilog.LoggerConfigurationAmazonS3Extensions.DefaultBatchingPeriod">
+            <summary>
+            The default batching period.
+            </summary>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,Amazon.RegionEndpoint,System.String,System.String,Serilog.Events.LogEventLevel,System.String,System.IFormatProvider,Serilog.Core.LoggingLevelSwitch,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="path">The path to the file</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="endpoint">The Amazon S3 endpoint.</param>
+            <param name="awsAccessKeyId">The Amazon S3 access key id.</param>
+            <param name="awsSecretAccessKey">The Amazon S3 access key.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="outputTemplate">The output template.</param>
+            <param name="formatProvider">
+            (Optional)
+            Supplies culture-specific formatting information, or
+            null.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,Amazon.RegionEndpoint,System.String,System.String,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch,Serilog.Formatting.ITextFormatter,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="path">The path to the file.</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="endpoint">The Amazon S3 endpoint.</param>
+            <param name="awsAccessKeyId">The Amazon S3 access key id.</param>
+            <param name="awsSecretAccessKey">The Amazon S3 access key.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="formatter">The formatter.</param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,Amazon.RegionEndpoint,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch,System.String,System.IFormatProvider,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="path">The path to the file.</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="endpoint">The Amazon S3 endpoint.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="outputTemplate">
+            (Optional)
+            A message template describing the format used to
+            write to the sink.
+            The default is "{Timestamp:yyyy-MM-dd
+            HH:mm:ss.fff zzz} [{Level:u3}]
+            {Message:lj}{NewLine}{Exception}".
+            </param>
+            <param name="formatProvider">
+            (Optional)
+            Supplies culture-specific formatting information, or
+            null.
+            </param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,Amazon.RegionEndpoint,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch,Serilog.Formatting.ITextFormatter,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="path">The path to the file.</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="endpoint">The Amazon S3 endpoint.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="formatter">The formatter.</param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,System.String,System.String,System.String,Serilog.Events.LogEventLevel,System.String,System.IFormatProvider,Serilog.Core.LoggingLevelSwitch,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="path">The path to the file</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="serviceUrl">The Amazon S3 service url.</param>
+            <param name="awsAccessKeyId">The Amazon S3 access key id.</param>
+            <param name="awsSecretAccessKey">The Amazon S3 access key.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="outputTemplate">The output template.</param>
+            <param name="formatProvider">
+            (Optional)
+            Supplies culture-specific formatting information, or
+            null.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,System.String,System.String,System.String,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch,Serilog.Formatting.ITextFormatter,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="path">The path to the file.</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="serviceUrl">The Amazon S3 service url.</param>
+            <param name="awsAccessKeyId">The Amazon S3 access key id.</param>
+            <param name="awsSecretAccessKey">The Amazon S3 access key.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="formatter">The formatter.</param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,System.String,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch,System.String,System.IFormatProvider,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="path">The path to the file.</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="serviceUrl">The Amazon S3 service url.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="outputTemplate">
+            (Optional)
+            A message template describing the format used to
+            write to the sink.
+            The default is "{Timestamp:yyyy-MM-dd
+            HH:mm:ss.fff zzz} [{Level:u3}]
+            {Message:lj}{NewLine}{Exception}".
+            </param>
+            <param name="formatProvider">
+            (Optional)
+            Supplies culture-specific formatting information, or
+            null.
+            </param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,System.String,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch,Serilog.Formatting.ITextFormatter,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="path">The path to the file.</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="serviceUrl">The Amazon S3 service url.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="formatter">The formatter.</param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,Amazon.S3.AmazonS3Client,System.String,System.String,Serilog.Events.LogEventLevel,System.String,System.IFormatProvider,Serilog.Core.LoggingLevelSwitch,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="client">The Amazon S3 client.</param>
+            <param name="path">The path to the file.</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="outputTemplate">
+            (Optional)
+            A message template describing the format used to
+            write to the sink.
+            The default is "{Timestamp:yyyy-MM-dd
+            HH:mm:ss.fff zzz} [{Level:u3}]
+            {Message:lj}{NewLine}{Exception}".
+            </param>
+            <param name="formatProvider">
+            (Optional)
+            Supplies culture-specific formatting information, or
+            null.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationAmazonS3Extensions.AmazonS3(Serilog.Configuration.LoggerSinkConfiguration,Amazon.S3.AmazonS3Client,System.String,System.String,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch,Serilog.Formatting.ITextFormatter,Serilog.Sinks.AmazonS3.RollingInterval,System.Text.Encoding,System.Action{System.Exception},System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>Write log events to the specified file.</summary>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when one or more required arguments are
+            null.
+            </exception>
+            <param name="sinkConfiguration">The logger sink configuration.</param>
+            <param name="client">The Amazon S3 client.</param>
+            <param name="path">The path to the file.</param>
+            <param name="bucketName">The Amazon S3 bucket name.</param>
+            <param name="restrictedToMinimumLevel">
+            (Optional)
+            The minimum level for
+            events passed through the sink. Ignored when
+            <paramref name="levelSwitch" /> is specified.
+            </param>
+            <param name="levelSwitch">
+            (Optional)
+            A switch allowing the pass-through minimum level
+            to be changed at runtime.
+            </param>
+            <param name="formatter">The formatter.</param>
+            <param name="rollingInterval">
+            (Optional)
+            The interval at which logging will roll over to a new
+            file.
+            </param>
+            <param name="encoding">
+            (Optional)
+            Character encoding used to write the text file. The
+            default is UTF-8 without BOM.
+            </param>
+            <param name="failureCallback">The failure callback.</param>
+            <param name="bucketPath">The Amazon S3 bucket path.</param>
+            <param name="batchSizeLimit">The batch size limit.</param>
+            <param name="batchingPeriod">The batching period.</param>
+            <param name="eagerlyEmitFirstEvent">A value indicating whether the first event should be emitted immediately or not.</param>
+            <param name="queueSizeLimit">The queue size limit.</param>
+            <returns>The configuration object allowing method chaining.</returns>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.AmazonS3Options">
+            <summary>
+            This class is the main options class.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.AmazonS3Client">
+            <summary>
+            Gets or sets the Amazon S3 client.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.AwsAccessKeyId">
+            <summary>
+            Gets or sets the AWS access key identifier.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.AwsSecretAccessKey">
+            <summary>
+            Gets or sets the AWS secret access key.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.BucketName">
+            <summary>
+            Gets or sets the Amazon S3 bucket name.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.BucketPath">
+            <summary>
+            Gets or sets the path where local files are stored.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.Encoding">
+            <summary>
+            Gets or sets the encoding.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.Endpoint">
+            <summary>
+            Gets or sets the Amazon S3 key endpoint.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.Path">
+            <summary>
+            Gets or sets the local path where the files are stored.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.Formatter">
+            <summary>
+            Gets or sets the text formatter.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.FailureCallback">
+            <summary>
+            Gets or sets the failure callback.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.ServiceUrl">
+            <summary>
+            Gets or sets the Amazon S3 service url.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.RollingInterval">
+            <summary>
+            Gets or sets the rolling interval.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.OutputTemplate">
+            <summary>
+            Gets or sets the output template.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.FormatProvider">
+            <summary>
+            Gets or sets the format provider.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.PathRoller">
+            <summary>
+            Gets or sets the path roller. Internally used only, not to be set by the options.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.NextCheckpoint">
+            <summary>
+            Gets or sets the next checkpoint. Internally used only, not to be set by the options.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.AmazonS3Options.CurrentFileSequence">
+            <summary>
+            Gets or sets the current file sequence number. Internally used only, not to be set by the options.
+            </summary>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.AmazonS3Sink">
+            <summary>
+            This class is the main class and contains all logic for the AmazonS3 sink.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.AmazonS3Sink.amazonS3Options">
+            <summary>
+            The Amazon S3 options.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.AmazonS3Sink.#ctor(Serilog.Sinks.AmazonS3.AmazonS3Options)">
+            <summary>Initializes a new instance of the <see cref="T:Serilog.Sinks.AmazonS3.AmazonS3Sink" /> class. </summary>
+            <exception cref="T:System.ArgumentNullException">A given value is null.</exception>
+            <param name="amazonS3Options">The Amazon S3 options.</param>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.AmazonS3Sink.EmitBatchAsync(System.Collections.Generic.IEnumerable{Serilog.Events.LogEvent})">
+            <summary>Emit a batch of log events, running asynchronously.</summary>
+            <param name="batch">The batch of events to emit.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> returning any asynchronous operation.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.AmazonS3Sink.OnEmptyBatchAsync">
+            <summary>
+            Allows sinks to perform periodic work without requiring additional threads
+            or timers (thus avoiding additional flush/shut-down complexity).
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> returning any asynchronous operation.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.AmazonS3Sink.OpenFile">
+            <summary>
+            Open a file and returns the file name and file stream.
+            </summary>
+            <returns>The <see cref="T:Serilog.Sinks.AmazonS3.FileInformation"/>.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.AmazonS3Sink.AlignCurrentFileTo(System.DateTime,System.Boolean)">
+            <summary>
+            Aligns the current file name to the sequence and returns the file name.
+            </summary>
+            <param name="now">The current date.</param>
+            <param name="nextSequence">The next sequence number.</param>
+            <returns>The file name as <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.AmazonS3Sink.GetFileName(System.DateTime,System.Nullable{System.Int32})">
+            <summary>
+            Gets the file name according to the rolling file sequence.
+            </summary>
+            <param name="now">The current date.</param>
+            <param name="minSequence">The minimum sequence number.</param>
+            <returns>The file name as <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.AmazonS3Sink.UploadFileToS3(System.String)">
+            <summary>
+            Uploads the file to a specified Amazon S3 bucket. 
+            </summary>
+            <param name="fileName"> he file name.</param>
+            <exception cref="T:System.UnauthorizedAccessException">
+            Thrown when an Unauthorized Access error
+            condition occurs.
+            </exception>
+            <exception cref="T:Amazon.S3.AmazonS3Exception">
+            Thrown when an Amazon S3 error condition
+            occurs.
+            </exception>
+            <exception cref="T:System.Exception">
+            Check the provided AWS credentials.
+            </exception>
+            <returns>
+            An asynchronous result that yields a PutObjectResponse. 
+            </returns>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.ConfigurationValidator">
+            <summary>
+            Validators for configuration parameters.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.ConfigurationValidator.ValidateServiceUrl(System.String)">
+            <summary>
+            Validates the value provided for <see cref="P:Serilog.Sinks.AmazonS3.AmazonS3Options.ServiceUrl"/> property.
+            </summary>
+            <param name="serviceUrl">The provided service url.</param>
+            <returns>A value indicating whether the service url is valid or not.</returns>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.ErrorMessageConstants">
+            <summary>
+            Constants to use in user-facing error messages.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.ErrorMessageConstants.ServiceUrlInvalidFormat">
+            <summary>
+            The <see cref="P:Serilog.Sinks.AmazonS3.AmazonS3Options.ServiceUrl"/> provided is in invalid format.
+            </summary>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.FileInformation">
+            <summary>
+            The file information.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.FileInformation.OutputWriter">
+            <summary>
+            Gets or sets the output stream writer.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.FileInformation.FileName">
+            <summary>
+            Gets or sets the file name.
+            </summary>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.PathRoller">
+            <summary>
+            The path roller to get the correct file sequences.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.PathRoller.PeriodMatchGroup">
+            <summary>
+            The period match group.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.PathRoller.SequenceNumberMatchGroup">
+            <summary>
+            The sequence number match group.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.PathRoller.fileNamePrefix">
+            <summary>
+            The file name prefix.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.PathRoller.fileNameSuffix">
+            <summary>
+            The file name suffix.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.PathRoller.fileNameMatcher">
+            <summary>
+            The file name matcher.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.PathRoller.interval">
+            <summary>
+            The interval.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.PathRoller.periodFormat">
+            <summary>
+            The period format.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.PathRoller.#ctor(System.String,Serilog.Sinks.AmazonS3.RollingInterval)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Serilog.Sinks.AmazonS3.PathRoller"/> class.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="interval">The interval.</param>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.PathRoller.LogFileDirectory">
+            <summary>
+            Gets the log file directory.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.PathRoller.DirectorySearchPattern">
+            <summary>
+            Gets the directory search pattern.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.PathRoller.GetLogFilePath(System.DateTime,System.Nullable{System.Int32},System.String@)">
+            <summary>
+            Gets the log file path.
+            </summary>
+            <param name="date">The date.</param>
+            <param name="sequenceNumber">The sequence number.</param>
+            <param name="path">The path.</param>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.PathRoller.SelectMatches(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Selects the matches.
+            </summary>
+            <param name="fileNames">The file names.</param>
+            <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Serilog.Sinks.AmazonS3.RollingLogFile"/>s.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.PathRoller.GetCurrentCheckpoint(System.DateTime)">
+            <summary>
+            Gets the current check point as <see cref="T:System.DateTime"/>.
+            </summary>
+            <param name="dateTime">The date time.</param>
+            <returns>The current check point as <see cref="T:System.DateTime"/>.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.PathRoller.GetNextCheckpoint(System.DateTime)">
+            <summary>
+            Gets the next check point as <see cref="T:System.DateTime"/>.
+            </summary>
+            <param name="dateTime">The date time.</param>
+            <returns>The next check point as <see cref="T:System.DateTime"/>.</returns>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.RollingInterval">
+            <summary>
+            Specifies the frequency at which the log file should roll.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.RollingInterval.Infinite">
+            <summary>
+            The log file will never roll; no time period information will be appended to the log file name.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.RollingInterval.Year">
+            <summary>
+            Roll every year. File names will have a four-digit year appended in the pattern <code>yyyy</code>.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.RollingInterval.Month">
+            <summary>
+            Roll every calendar month. File names will have <code>yyyyMM</code> appended.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.RollingInterval.Day">
+            <summary>
+            Roll every day. File names will have <code>yyyyMMdd</code> appended.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.RollingInterval.Hour">
+            <summary>
+            Roll every hour. File names will have <code>yyyyMMddHH</code> appended.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.AmazonS3.RollingInterval.Minute">
+            <summary>
+            Roll every minute. File names will have <code>yyyyMMddHHmm</code> appended.
+            </summary>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.RollingIntervalExtensions">
+            <summary>
+            This class contains extension methods for the <see cref="T:Serilog.Sinks.AmazonS3.RollingInterval"/> enumeration.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.RollingIntervalExtensions.GetFormat(Serilog.Sinks.AmazonS3.RollingInterval)">
+            <summary>
+            Gets the format <see cref="T:System.String"/>.
+            </summary>
+            <param name="interval">The interval.</param>
+            <returns>The format <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.RollingIntervalExtensions.GetCurrentCheckpoint(Serilog.Sinks.AmazonS3.RollingInterval,System.DateTime)">
+            <summary>
+            Gets the current check point as <see cref="T:System.DateTime"/>.
+            </summary>
+            <param name="interval">The interval.</param>
+            <param name="dateTime">The date time.</param>
+            <returns>The current check point as <see cref="T:System.DateTime"/>.</returns>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.RollingIntervalExtensions.GetNextCheckpoint(Serilog.Sinks.AmazonS3.RollingInterval,System.DateTime)">
+            <summary>
+            Gets the next check point as <see cref="T:System.DateTime"/>.
+            </summary>
+            <param name="interval">The interval.</param>
+            <param name="dateTime">The date time.</param>
+            <returns>The next check point as <see cref="T:System.DateTime"/>.</returns>
+        </member>
+        <member name="T:Serilog.Sinks.AmazonS3.RollingLogFile">
+            <summary>
+            The rolling log file class to handle rolling log files.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.AmazonS3.RollingLogFile.#ctor(System.String,System.Nullable{System.DateTime},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Serilog.Sinks.AmazonS3.RollingLogFile"/> class.
+            </summary>
+            <param name="fileName">The file name.</param>
+            <param name="dateTime">The date time.</param>
+            <param name="sequenceNumber">The sequence number.</param>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.RollingLogFile.FileName">
+            <summary>
+            Gets the file name.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.RollingLogFile.DateTime">
+            <summary>
+            Gets the date time.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.AmazonS3.RollingLogFile.SequenceNumber">
+            <summary>
+            Gets the sequence number.
+            </summary>
+        </member>
+    </members>
+</doc>
